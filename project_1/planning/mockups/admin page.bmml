@@ -1,0 +1,188 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1129" measuredH="2132" mockupW="960" mockupH="2121">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="1017" y="67" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logout</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="212" y="68" w="-1" h="-1" measuredW="57" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::ComboBox" x="471" y="628" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Location</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="__group__" x="169" y="11" w="960" h="2121" measuredW="960" measuredH="2121" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="960" h="2121" measuredW="960" measuredH="2121" zOrder="0" locked="false" isInGroup="42">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="960" h="2121" measuredW="960" measuredH="2121" zOrder="0" locked="false" isInGroup="0">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="960" h="2121" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <backgroundAlpha>1</backgroundAlpha>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="43" controlTypeID="__group__" x="286" y="696" w="449" h="181" measuredW="449" measuredH="181" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="43">
+          <controlProperties>
+            <text>instructors</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="388" y="139" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="43">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="19" w="-1" h="-1" measuredW="209" measuredH="143" zOrder="2" locked="false" isInGroup="43">
+          <controlProperties>
+            <text>Instructor%2C%20View%2C%20Edit%2C%20Delete%0AGerry%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AMichael%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0ADanny%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AMike%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="44" controlTypeID="__group__" x="285" y="920" w="449" h="181" measuredW="449" measuredH="181" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="44">
+          <controlProperties>
+            <text>Producers</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="389" y="139" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="44">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="39" y="22" w="-1" h="-1" measuredW="189" measuredH="83" zOrder="2" locked="false" isInGroup="44">
+          <controlProperties>
+            <text>Name%2C%20View%2C%20Edit%2C%20Delete%0AJulian%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0ALaura%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="45" controlTypeID="__group__" x="286" y="1143" w="449" h="181" measuredW="449" measuredH="181" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="45">
+          <controlProperties>
+            <text>Campus</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="388" y="145" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="45">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="32" w="-1" h="-1" measuredW="232" measuredH="83" zOrder="2" locked="false" isInGroup="45">
+          <controlProperties>
+            <text>Name%2C%20View%2C%20Edit%2C%20Delete%0A9%20back%20hill%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0Athe%20other%20one%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="46" controlTypeID="__group__" x="286" y="1368" w="449" h="181" measuredW="449" measuredH="181" zOrder="7" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="46">
+          <controlProperties>
+            <text>Format</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="382" y="142" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="46">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="41" w="-1" h="-1" measuredW="206" measuredH="113" zOrder="2" locked="false" isInGroup="46">
+          <controlProperties>
+            <text>Name%2C%20View%2C%20Edit%2C%20Delete%0AFull%20time%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0APart%20time%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0Aone-off%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="47" controlTypeID="__group__" x="286" y="1587" w="449" h="181" measuredW="449" measuredH="181" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="47">
+          <controlProperties>
+            <text>courses%20-%20current</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="382" y="142" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="47">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="41" w="-1" h="-1" measuredW="206" measuredH="113" zOrder="2" locked="false" isInGroup="47">
+          <controlProperties>
+            <text>Name%2C%20View%2C%20Edit%2C%20Delete%0AWDI%207%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AUXDI%206%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AWDI%20355%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="48" controlTypeID="__group__" x="286" y="1808" w="449" h="181" measuredW="449" measuredH="181" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="48">
+          <controlProperties>
+            <text>students</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="382" y="142" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="48">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="41" w="-1" h="-1" measuredW="223" measuredH="113" zOrder="2" locked="false" isInGroup="48">
+          <controlProperties>
+            <text>Name%2C%20View%2C%20Edit%2C%20Delete%0AToby%20Merlet%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AJane%20Doe%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AMalcom%20X%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="49" controlTypeID="__group__" x="285" y="158" w="449" h="181" measuredW="449" measuredH="181" zOrder="10" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="49">
+          <controlProperties>
+            <text>programs</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="388" y="139" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="49">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="41" w="-1" h="-1" measuredW="321" measuredH="113" zOrder="2" locked="false" isInGroup="49">
+          <controlProperties>
+            <text>name%2C%20View%2C%20Edit%2C%20Delete%0AWeb%20development%20immersive%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AUser%20experience%20design%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0APrograming%20for%20Dummies%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="50" controlTypeID="__group__" x="286" y="399" w="449" h="181" measuredW="449" measuredH="181" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="449" h="181" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="50">
+          <controlProperties>
+            <text>locations</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="388" y="139" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="1" locked="false" isInGroup="50">
+          <controlProperties>
+            <text>New</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="38" y="41" w="-1" h="-1" measuredW="210" measuredH="113" zOrder="2" locked="false" isInGroup="50">
+          <controlProperties>
+            <text>Name%2C%20View%2C%20Edit%2C%20Delete%0ALondon%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0ANew%20York%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%0AParis%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
