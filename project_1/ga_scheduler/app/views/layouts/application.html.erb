@@ -7,7 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>General Assembly Course Scheduler</h1>
+  <div class="header">
+    <%=image_tag("General assembly header.png", alt: "GA logo")%>
+  </div>
+
+  <p class="menu">
+  <%= link_to 'Home', courses_path %> | 
+  <%= link_to 'Students', students_path %> | 
+  <%= link_to 'Instructors', instructors_path %> |
+  <%= link_to 'Producers', producers_path %> |
+  <%= link_to 'Courses', courses_path %> | 
+  <%= link_to 'Programs', programs_path %> | 
+  <%= link_to 'Topics', topics_path %> |
+  <%= link_to 'Formats', formats_path %> |
+  <%= link_to 'Classrooms', classrooms_path %> |
+  <%= link_to 'Locations', locations_path %> |
+  </p>
 
 <%= yield %>
 

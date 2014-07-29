@@ -3,11 +3,9 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Description</th>
     <th>Topic</th>
     <th>Image</th>
     <th>Format</th>
-    <th>Published</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,11 +14,9 @@
 <% @programs.each do |program| %>
   <tr>
     <td><%= program.name %></td>
-    <td><%= program.description %></td>
     <td><%= program.topic.name %></td>
     <td><%= image_tag program.program_image.thumb.url %></td>
     <td><%= program.format.name %></td>
-    <td><%= program.published %></td>
     <td><%= link_to 'Show', program %></td>
     <td><%= link_to 'Edit', edit_program_path(program) %></td>
     <td><%= link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' } %></td>
