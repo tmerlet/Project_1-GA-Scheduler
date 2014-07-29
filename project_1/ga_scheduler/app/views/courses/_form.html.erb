@@ -1,0 +1,58 @@
+<%= form_for(@course) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="dropdown">
+    <%= f.label "Program: " %><br />
+    <%= f.collection_select :program_id, Program.all, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :start_course %><br />
+    <%= f.datetime_select :start_course %>
+  </div>
+  <div class="field">
+    <%= f.label :end_course %><br />
+    <%= f.datetime_select :end_course %>
+  </div>
+  <div class="field">
+    <%= f.label :weekend %><br />
+    <%= f.check_box :weekend %>
+  </div>
+  <div class="field">
+    <%= f.label :published %><br />
+    <%= f.check_box :published %>
+  </div>
+  <div class="dropdown">
+    <%= f.label "Classroom: " %><br />
+    <% unless @course.new_record? %>
+      <%= collection_select :course, :classroom_id, Classroom.where(location_id: @course.classroom.location.id), :id, :name %>
+    <% else %>
+      <%#= collection_select :course, :classroom_id, Classroom.all, :id, :name %>
+    <%= grouped_collection_select(:course, :classroom_id, Location.all, :classrooms, :name, :id, :name) %>
+
+    <%#  grouped_collection_select(:city, :country_id, @continents, :countries, :name, :id, :name) %>
+
+    <% end %>  
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

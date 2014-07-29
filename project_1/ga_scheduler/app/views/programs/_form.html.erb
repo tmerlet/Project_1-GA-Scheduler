@@ -1,0 +1,41 @@
+<%= form_for(@program) do |f| %>
+  <% if @program.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@program.errors.count, "error") %> prohibited this program from being saved:</h2>
+
+      <ul>
+      <% @program.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="dropdown">
+    <%= f.label :topic_id %><br />
+    <%= f.collection_select :topic_id, Topic.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :program_image %><br />
+    <%= f.file_field :program_image %>
+  </div>
+  <div class="dropdown">
+    <%= f.label :format_id %><br />
+    <%= f.collection_select :format_id, Format.all, :id, :name %>
+  </div>
+    <div class="field">
+    <%= f.label :published %><br />
+    <%= f.check_box :published %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

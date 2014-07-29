@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @program.name %>
+</p>
+
+<p>
+  <b>Desciption:</b>
+  <%= @program.description %>
+</p>
+
+<p>
+  <b>Topic:</b>
+  <%= @program.topic.name %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= link_to image_tag(@program.program_image.detail.url), @program.program_image.detail.url %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @program.format.name %>
+</p>
+
+<p>
+  <b>Published:</b>
+  <%= @program.published %>
+</p>
+
+
+<%= link_to 'Edit', edit_program_path(@program) %> |
+<%= link_to 'Back', programs_path %>

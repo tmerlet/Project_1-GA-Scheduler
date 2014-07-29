@@ -1,4 +1,32 @@
 GaScheduler::Application.routes.draw do
+
+  resources :topics
+
+
+  resources :formats
+
+
+  resources :classrooms
+
+
+  resources :locations
+
+
+  resources :producers
+
+
+  resources :instructors
+
+
+  resources :students
+
+
+  resources :programs
+
+
+  resources :courses
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

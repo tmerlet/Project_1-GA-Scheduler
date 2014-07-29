@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Program:</b>
+  <%= @course.program.name %>
+</p>
+
+
+<p>
+  <b>Name:</b>
+  <%= @course.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @course.price %>
+</p>
+
+<p>
+  <b>Start Course:</b>
+  <%= @course.start_course %>
+</p>
+
+<p>
+  <b>End Course:</b>
+  <%= @course.end_course %>
+</p>
+
+<p>
+  <b>Weekend:</b>
+  <%= @course.weekend %>
+</p>
+
+<p>
+  <b>Published:</b>
+  <%= @course.published %>
+</p>
+
+
+<p>
+  <b>Location:</b>
+  <%= @course.classroom.location.name %>
+</p>
+
+<p>
+  <b>classroom:</b>
+  <%= @course.classroom.name %>
+</p>
+
+<p>
+  <b>Students: <%= @course.students.count %><b></br>
+  <% @course.students.each do |student| %>
+    <%= student.name %>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>
