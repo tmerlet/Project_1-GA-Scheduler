@@ -47,6 +47,7 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     erubis (2.7.0)
+    event-calendar (2.3.3)
     execjs (2.2.1)
     hike (1.2.3)
     i18n (0.6.11)
@@ -123,6 +124,7 @@ DEPENDENCIES
   better_errors
   carrierwave
   coffee-rails (~> 3.2.1)
+  event-calendar
   jquery-rails
   pry-rails
   rails (= 3.2.17)
