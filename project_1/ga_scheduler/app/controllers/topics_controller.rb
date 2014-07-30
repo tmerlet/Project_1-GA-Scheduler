@@ -1,6 +1,9 @@
 class TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
+
+  load_and_authorize_resource
+  
   def index
     @topics = Topic.all
 

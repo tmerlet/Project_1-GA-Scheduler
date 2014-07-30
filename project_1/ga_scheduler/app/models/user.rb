@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
 
   has_and_belongs_to_many :courses
 
+  def role?(role)
+    self.role.to_s == role.to_s
+  end
+
 end

@@ -1,6 +1,9 @@
 class FormatsController < ApplicationController
   # GET /formats
   # GET /formats.json
+
+  load_and_authorize_resource
+  
   def index
     @formats = Format.all
 

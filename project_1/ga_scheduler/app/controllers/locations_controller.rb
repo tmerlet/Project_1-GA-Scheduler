@@ -1,6 +1,9 @@
 class LocationsController < ApplicationController
   # GET /locations
   # GET /locations.json
+
+  load_and_authorize_resource
+  
   def index
     @locations = Location.all
 
