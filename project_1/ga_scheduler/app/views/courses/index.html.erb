@@ -19,12 +19,20 @@
     <td><%= course.start_course.strftime('%H-%M') %> <br/><%= course.end_course.strftime('%H-%M') %></td>
   
     <td><%= link_to 'Show', course %></td>
+    <% if current_user.role == "producer" %>
     <td><%= link_to 'Edit', edit_course_path(course) %></td>
     <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
 
+<% if current_user.role == "producer" %>
+
 <%= link_to 'New Course', new_course_path %>
+
+<% end %>
+
+

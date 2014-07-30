@@ -6,7 +6,7 @@ class Ability
     if user.role? :producer
       can :manage, :all
     elsif user.role? :student
-      can :read, User
+      can :read, Course
 
     elsif user.role? :instructor
         can :read, :all

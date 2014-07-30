@@ -27,6 +27,8 @@
   <%= @course.end_course %>
 </p>
 
+<% unless current_user.role == "student" %>
+
 <p>
   <b>Weekend:</b>
   <%= @course.weekend %>
@@ -36,7 +38,6 @@
   <b>Published:</b>
   <%= @course.published %>
 </p>
-
 
 <p>
   <b>Location:</b>
@@ -57,4 +58,6 @@
 
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
+
+<% end %>
 <%= link_to 'Back', courses_path %>
