@@ -1,5 +1,25 @@
 GaScheduler::Application.routes.draw do
 
+
+  root to: "users#index"
+  get 'login', to: 'sessions#new'
+  delete "/logout", to: 'sessions#destroy', as: :logout
+  resources :sessions, only: [:new, :create, :destroy]
+
+  # get "sessions/new"
+
+  # get "sessions/create"
+
+  # get "sessions/destroy"
+
+  resources :users
+
+  # get "users/index"
+
+  # get "users/new"
+
+  # get "users/create"
+
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
   resources :topics

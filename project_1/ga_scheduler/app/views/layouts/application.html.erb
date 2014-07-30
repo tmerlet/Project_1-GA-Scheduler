@@ -9,6 +9,21 @@
   <%= javascript_include_tag "jrails1/fullcalendar.js","jrails1/jquery- ui.js","jrails1/gcal.js","jrails1/jrails.js","jrails1/jquery.validate.js"%>
 </head>
 <body>
+
+  <% if current_user %>
+   <p> hello, <%= current_user.email %> </p>
+  <%= link_to 'Logout', logout_path, method: :delete %>
+  <% else %>
+   <%= link_to 'login', login_path %> |
+   <%= link_to 'Sign Up', new_user_path %>
+
+  <% end %>
+
+  <% flash.each do |name, message| %>
+    <div class="flash-message flash-message-<%= name %>">
+     <%= message %>
+    </div>
+   <% end %>
   <div class="header">
     <%=image_tag("General assembly header.png", alt: "GA logo")%>
   </div>

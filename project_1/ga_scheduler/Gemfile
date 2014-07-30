@@ -12,6 +12,7 @@ gem 'rmagick', :require => 'RMagick'
 gem 'better_errors'
 gem 'pry-rails'
 gem 'event-calendar', :require => 'event_calendar'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 
 

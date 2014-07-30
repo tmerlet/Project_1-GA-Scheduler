@@ -52,6 +52,12 @@
 
     <% end %>  
   </div>
+  <div class="field">
+    <h3>Select Producer<h3>
+    <%= select_tag "course[producer_ids][]", options_from_collection_for_select(User.where(role: "producer"), "id", "name")%>
+  </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
