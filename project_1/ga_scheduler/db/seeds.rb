@@ -31,16 +31,16 @@ c3 = Course.create(name: 'WDI 300', price: 8000, start_course: '30 Jun 2014 09:3
 
 c4 = Course.create(name: 'UXDI 4000', price: 6000, start_course: '30 Jun 2014 09:30:00 +0000', end_course: '19 Sep 2014 17:30:00 +0000', published: true, weekend: false)
 
-s1 = Student.create(name: 'Toby Merlet', phone_number: '07590 675 666', paid: true)
-s2 = Student.create(name: 'Malcom X', phone_number: '00000 555 999', paid: true)
-s3 = Student.create(name: 'Mike Tyson', phone_number: '07444 1234 4321', paid: false)
-s4 = Student.create(name: 'Michael Jackson', phone_number: '00000 666 000', paid: false)
+s1 = User.create(name: 'Toby Merlet', phone_number: '07590 675 666', paid: true, role: 'Student')
+s2 = User.create(name: 'Malcom X', phone_number: '00000 555 999', paid: true, role: 'Student')
+s3 = User.create(name: 'Mike Tyson', phone_number: '07444 1234 4321', paid: false, role: 'Student')
+s4 = User.create(name: 'Michael Jackson', phone_number: '00000 666 000', paid: false, role: 'Student')
 
-i1 = Instructor.create(name: 'Geri', phone_number: '09809 9080 0980')
-i2 = Instructor.create(name: 'Mike', phone_number: '07890 0980 1234')
+i1 = User.create(name: 'Geri', phone_number: '09809 9080 0980', role: 'instructor')
+i2 = User.create(name: 'Mike', phone_number: '07890 0980 1234', role: 'instructor')
 
-p1 = Producer.create(name: 'Julian', phone_number: '07432 4324 4324')
-p2 = Producer.create(name: 'Laura', phone_number: '07234 3214 3456')
+p1 = User.create(name: 'Julian', phone_number: '07432 4324 4324', role: 'producer')
+p2 = User.create(name: 'Laura', phone_number: '07234 3214 3456', role: 'producer')
 
 
 locationlon1 = Location.create(name: 'London - Back Hill', country: 'UK')

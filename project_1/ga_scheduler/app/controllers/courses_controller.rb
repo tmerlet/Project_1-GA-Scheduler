@@ -40,7 +40,8 @@ class CoursesController < ApplicationController
   # POST /courses
   # POST /courses.json
   def create
-    @course = Course.new(params[:course])
+    
+    @course = Course.create(params[:course])
 
     respond_to do |format|
       if @course.save
@@ -52,6 +53,8 @@ class CoursesController < ApplicationController
       end
     end
   end
+
+
 
   # PUT /courses/1
   # PUT /courses/1.json

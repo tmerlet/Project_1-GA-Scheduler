@@ -34,21 +34,6 @@ ActiveRecord::Schema.define(:version => 20140730111200) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "courses_instructors", :id => false, :force => true do |t|
-    t.integer "course_id"
-    t.integer "instructor_id"
-  end
-
-  create_table "courses_producers", :id => false, :force => true do |t|
-    t.integer "course_id"
-    t.integer "producer_id"
-  end
-
-  create_table "courses_students", :id => false, :force => true do |t|
-    t.integer "course_id"
-    t.integer "student_id"
-  end
-
   create_table "courses_users", :id => false, :force => true do |t|
     t.integer "course_id"
     t.integer "user_id"
@@ -69,25 +54,11 @@ ActiveRecord::Schema.define(:version => 20140730111200) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "instructors", :force => true do |t|
-    t.string   "name"
-    t.string   "phone_number"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "locations", :force => true do |t|
     t.string   "name"
     t.string   "country"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "producers", :force => true do |t|
-    t.string   "name"
-    t.string   "phone_number"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
   end
 
   create_table "programs", :force => true do |t|
@@ -102,14 +73,6 @@ ActiveRecord::Schema.define(:version => 20140730111200) do
     t.string   "program_image"
   end
 
-  create_table "students", :force => true do |t|
-    t.string   "name"
-    t.string   "phone_number"
-    t.boolean  "paid"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "topics", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -120,10 +83,11 @@ ActiveRecord::Schema.define(:version => 20140730111200) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "name"
-    t.string   "telephone_number"
+    t.string   "phone_number"
     t.string   "role"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.boolean  "paid"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

@@ -49,9 +49,9 @@
 </p>
 
 <p>
-  <b>Students: <%= @course.students.count %><b></br>
-  <% @course.students.each do |student| %>
-    <%= student.name %>
+  <b>Producer:</b>
+  <% @course.producers.each do |p| %>
+    <%= p.name %>
   <% end %>
 </p>
 

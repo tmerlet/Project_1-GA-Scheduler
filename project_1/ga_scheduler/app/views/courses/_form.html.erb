@@ -52,13 +52,32 @@
 
     <% end %>  
   </div>
-  <div class="field">
-    <h3>Select Producer<h3>
+
+  <div class="field">  
+    <h3>Select Producer</h3>
     <%= select_tag "course[producer_ids][]", options_from_collection_for_select(User.where(role: "producer"), "id", "name")%>
   </div>
 
+  <div class="field">
+  <h3>Select Instructor</h3> 
+    <% User.where(role: "instructor").each do |user| %>  
+      <%= check_box_tag "course[instructor_ids][]", user.id %>
+
+      <%= label :user_ids, user.name%>
+    <% end %>
+  </div>
+
+  <div class="field"> 
+    <h3>Select Student</h3>
+    <% User.where(role: "student").each do |user| %>  
+      <%= check_box_tag "course[student_ids][]", user.id %>
+
+      <%= label :user_ids, user.name%>
+    <% end %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>
