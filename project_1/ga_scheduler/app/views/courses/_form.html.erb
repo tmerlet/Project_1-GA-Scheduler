@@ -70,7 +70,7 @@
   <div class="field"> 
     <h3>Select Student</h3>
     <% User.where(role: "student").each do |user| %>  
-      <%= check_box_tag "course[student_ids][]", user.id %>
+      <%= check_box_tag "course[student_ids][]", user.id, @course.students.include?(user), id: "course_student_ids_#{user.id}"  %>
 
       <%= label :user_ids, user.name%>
     <% end %>

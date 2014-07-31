@@ -22,5 +22,6 @@
 </table>
 
 <br />
-
+<% if current_user.role == "producer" %>
 <%= link_to 'New Location', new_location_path %>
+<% end %>

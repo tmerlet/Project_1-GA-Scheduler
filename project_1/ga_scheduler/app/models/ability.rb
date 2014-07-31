@@ -7,6 +7,7 @@ class Ability
       can :manage, :all
     elsif user.role? :student
       can :read, Course
+      can :read, Location
 
     elsif user.role? :instructor
         can :read, :all
