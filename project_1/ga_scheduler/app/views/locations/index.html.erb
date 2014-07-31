@@ -15,6 +15,6 @@
 
 <div class="new_course">
   <% if current_user.role == "producer" %>
-    <%= link_to 'New location', new_location_path %>
+    <%= link_to 'New location', new_location_path, class: "button"  %>
   <% end %>
 </div>

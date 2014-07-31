@@ -1,12 +1,34 @@
 body {
   background-image:url('nyc_background.jpg');
-  font: impact;
+  font-family: impact;
 }
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   background-color:rgba(255,255,255,0.9);
-  margin: 50 50 50 50;
+}
+
+nav {
+margin: 0px auto;  
+}
+
+a {
+  text-decoration: none;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+a:hover {
+  color: gray;
+}
+
+.button {
+  display:inline-block;
+  padding:5px;
+  background:rgb(255,255,24);
+  border-radius: 10px;
+  width: 8%;
+  text-align: center;
 }
 
 header {
@@ -14,6 +36,7 @@ header {
   background-color: black;
   text-align: center;
   color: white;
+  padding: 10px;
 }
 
 header img {
@@ -22,10 +45,17 @@ header img {
   float: left;
 }
 
-article {
-  margin:50 50 50 50;
+main {
+  padding: 20px;
 }
 
+article {
+  margin:5px 5px 10px 5px;
+}
+
+hr {
+  margin-top: 0px;
+}
 .action {
   text-align: center;
   width:60px;
@@ -62,15 +92,15 @@ article {
   text-align: center
 }
 
-.field {
+.userlogin {
   text-align: center;
   margin: 0 auto;
 }
 
-.action {
+/*.actions {
   text-align: center;
   margin: 0 auto;
-}
+}*/
 
 .box {
   text-align: center;
