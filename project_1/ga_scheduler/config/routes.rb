@@ -1,7 +1,7 @@
 GaScheduler::Application.routes.draw do
 
 
-  root to: "sessions#new"
+  root to: "courses#index"
   get 'login', to: 'sessions#new'
   delete "/logout", to: 'sessions#destroy', as: :logout
   resources :sessions, only: [:new, :create, :destroy]
