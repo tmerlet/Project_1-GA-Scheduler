@@ -1,9 +1,99 @@
-.header {
-  height: 55px;
-  background-color: black;
+body {
+  background-image:url('nyc_background.jpg');
+  font: impact;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color:rgba(255,255,255,0.9);
+  margin: 50 50 50 50;
 }
 
-.header img {
-height: 55px;
+header {
+  height: 90px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
 
+header img {
+  height: 55px;
+  display: block;
+  float: left;
+}
+
+article {
+  margin:50 50 50 50;
+}
+
+.action {
+  text-align: center;
+}
+
+.login {
+  width:150px;
+  float: right;
+  vertical-align: top;
+}
+
+.courseimage,
+.coursedates
+ {
+  width:25%;
+  float:left;
+}
+
+.coursedescription{
+  width:50%;
+  float:left;
+}
+
+.courseimage img{
+  width:100%;
+}
+
+/*.coursedates{
+  width:25%;
+  float:left;
+}*/
+
+.new_course {
+  text-align: center
+}
+
+.field {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.action {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+h1 {
+  text-align: center;
 }

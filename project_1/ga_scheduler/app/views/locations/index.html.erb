@@ -1,27 +1,20 @@
-<h1>Listing locations</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Country</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @locations.each do |location| %>
-  <tr>
-    <td><a href="http://localhost:3000/calendar/<%= location.id %>"><%= location.name %></a></td>
-    <td><%= location.country %></td>
+
+  <h2>
+    <a href="http://localhost:3000/calendar/<%= location.id %>"><%= location.name %></a>
+      <p><%= location.country %></p>
+  </h2>
   <% if current_user.role == "producer" %>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <p><%= link_to 'Edit', edit_location_path(location) %> |  <%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></p>
   <% end %>
   </tr>
 <% end %>
 </table>
 
-<br />
-<% if current_user.role == "producer" %>
-<%= link_to 'New Location', new_location_path %>
-<% end %>
+<div class="new_course">
+  <% if current_user.role == "producer" %>
+    <%= link_to 'New location', new_location_path %>
+  <% end %>
+</div>

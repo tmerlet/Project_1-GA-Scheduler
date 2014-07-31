@@ -10,19 +10,23 @@
 </head>
 <body>
   <div class="wrapper">
-  <div class="header">
+  
+  <header>
     <%=image_tag("General assembly header.png", alt: "GA logo")%>
-  </div>
+    <div class="login">
+      <% if current_user %>
+        <p> hello, <%= current_user.email %> </p>
+        <p><%= link_to 'Logout', logout_path, method: :delete %></p>
+      <% else %>
+        <p>
+           <%= link_to 'login', login_path %> |
+           <%= link_to 'Sign Up', new_user_path %>
+        </p>
+      <% end %>
+    </div>
+  </header>
 
-  <% if current_user %>
-   <p> hello, <%= current_user.email %> </p>
-   <p>
-     <%= link_to 'Logout', logout_path, method: :delete %>
-  <% else %>
-     <%= link_to 'login', login_path %> |
-     <%= link_to 'Sign Up', new_user_path %>
-  </p>
-  <% end %>
+
 
   <% flash.each do |name, message| %>
     <div class="flash-message flash-message-<%= name %>">
@@ -47,8 +51,9 @@
       <% end %>
     </p>
   <% end %>
-  </div>
+  
 <%= yield %>
 
+  </div>
 </body>
 </html>
