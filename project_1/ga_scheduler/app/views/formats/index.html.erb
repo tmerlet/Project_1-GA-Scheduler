@@ -11,9 +11,11 @@
 <% @formats.each do |format| %>
   <tr>
     <td><%= format.name %></td>
-    <td><%= link_to 'Show', format %></td>
-    <td><%= link_to 'Edit', edit_format_path(format) %></td>
-    <td><%= link_to 'Destroy', format, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% if current_user.role == "producer" %>
+      <td><%= link_to 'Show', format %></td>
+      <td><%= link_to 'Edit', edit_format_path(format) %></td>
+      <td><%= link_to 'Destroy', format, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

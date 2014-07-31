@@ -2,7 +2,7 @@
 
 <% if current_user.role == "student" %>
 
-  <h2>Sign up!: Call Oliver on 07590 666 9801</h2>
+  <h2>Sign up! Call Oliver on 07590 666 9801</h2>
 
 <% end %>
 
@@ -23,26 +23,17 @@
 </p>
 
 <p>
-  <b>Start Course:</b>
-  <%= @course.start_course %>
+  <b>Course dates</b>
+  <%= @course.start_course.strftime('%d-%b-%Y') %> - <%= @course.end_course.strftime('%d-%b-%Y') %>
 </p>
 
 <p>
-  <b>End Course:</b>
-  <%= @course.end_course %>
+  <b>Course times</b>
+    <%= @course.start_course.strftime('%H-%M') %> / <%= @course.end_course.strftime('%H-%M') %>
 </p>
+
 
 <% unless current_user.role == "student" %>
-
-<p>
-  <b>Weekend:</b>
-  <%= @course.weekend %>
-</p>
-
-<p>
-  <b>Published:</b>
-  <%= @course.published %>
-</p>
 
 <p>
   <b>Location:</b>
@@ -50,7 +41,7 @@
 </p>
 
 <p>
-  <b>classroom:</b>
+  <b>Classroom:</b>
   <%= @course.classroom.name %>
 </p>
 
@@ -61,8 +52,26 @@
   <% end %>
 </p>
 
+<p>
+  <b>Instructors:</b>
+  <% @course.instructors.each do |p| %>
+    <%= p.name %>
+  <% end %>
+</p>
+
+<p>
+  <b>Students:</b>
+  <% @course.students.each do |p| %> |
+    <%= p.name %>
+  <% end %>
+</p>
+
+<% end %>
+
+<% if current_user.role == "producer" %>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
 
 <% end %>
+
 <%= link_to 'Back', courses_path %>
