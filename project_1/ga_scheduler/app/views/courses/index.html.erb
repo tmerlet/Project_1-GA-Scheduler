@@ -13,7 +13,7 @@
 
 <% @courses.each do |course| %>
   <tr>
-    <td><%= link_to course.program.name, course %></td>
+    <td><%= link_to course.program.name, course %><br/><%= course.classroom.location.name %></td>
     <td><%= image_tag course.program.program_image.thumb.url %></td>
     <td><%= course.start_course.strftime('%d-%b-%Y') %> <br/><%= course.end_course.strftime('%d-%b-%Y') %></td>
     <td><%= course.start_course.strftime('%H-%M') %> <br/><%= course.end_course.strftime('%H-%M') %></td>

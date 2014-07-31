@@ -11,7 +11,7 @@
 
 <% @locations.each do |location| %>
   <tr>
-    <td><%= link_to location.name, location %></td>
+    <td><a href="http://localhost:3000/calendar/<%= location.id %>"><%= location.name %></a></td>
     <td><%= location.country %></td>
   <% if current_user.role == "producer" %>
     <td><%= link_to 'Edit', edit_location_path(location) %></td>
