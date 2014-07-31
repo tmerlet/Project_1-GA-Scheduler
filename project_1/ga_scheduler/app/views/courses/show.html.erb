@@ -1,78 +1,93 @@
-<p id="notice"><%= notice %></p>
-
 <% if current_user.role == "student" %>
 
-  <h2>Sign up! Call Oliver on 07590 666 9801</h2>
+  <h3>Sign up! Call Julian on 07590 666 9801 24h :)</h3>
 
 <% end %>
 
-<p>
-  <b>Program:</b>
-  <%= @course.program.name %>
-</p>
+<br/>
+
+<h1><%= @course.program.name %></h1>
+
+<div class="courseimage floatleft">
+  <%= image_tag @course.program.program_image.url %>
+</div>
+
+<table>
+  
 
 
-<p>
-  <b>Name:</b>
-  <%= @course.name %>
-</p>
+  <tr>
+    <td><h3>Name: </h3><td>
+    <td><%= @course.name %><td>
+  </tr>
 
-<p>
-  <b>Price:</b>
-  <%= @course.price %>
-</p>
+  <tr>
+    <td><h3>Price: </h3><td>
+    <td><%= @course.price %><td>
+  </tr>
 
-<p>
-  <b>Course dates</b>
-  <%= @course.start_course.strftime('%d-%b-%Y') %> - <%= @course.end_course.strftime('%d-%b-%Y') %>
-</p>
+  <tr>
+    <td><h3>Course dates: </h3><td>
+    <td><%= @course.start_course.strftime('%d-%b-%Y') %> - <%= @course.end_course.strftime('%d-%b-%Y') %><td>
+  </tr>
 
-<p>
-  <b>Course times</b>
-    <%= @course.start_course.strftime('%H-%M') %> / <%= @course.end_course.strftime('%H-%M') %>
-</p>
-
+  <tr>
+    <td><h3>Course times: </h3><td>
+    <td><%= @course.start_course.strftime('%H-%M') %> / <%= @course.end_course.strftime('%H-%M') %><td>
+  </tr>
 
 <% unless current_user.role == "student" %>
 
-<p>
-  <b>Location:</b>
-  <%= @course.classroom.location.name %>
-</p>
+<tr>
+  <td><h3>Location: </h3><td>
+  <td><%= @course.classroom.location.name %><td>
+</tr>
 
-<p>
-  <b>Classroom:</b>
-  <%= @course.classroom.name %>
-</p>
+<tr>
+  <td><h3>Classroom: </h3><td>
+  <td><%= @course.classroom.name %><td>
+</tr>
 
-<p>
-  <b>Producer:</b>
-  <% @course.producers.each do |p| %>
-    <%= p.name %>
-  <% end %>
-</p>
+<tr>
+  <td><h3>Producer: </h3><td>
+  <td>
+    <% @course.producers.each do |p| %>
+      <%= p.name %>
+    <% end %>
+    <td>
+</tr>
 
-<p>
-  <b>Instructors:</b>
-  <% @course.instructors.each do |p| %>
-    <%= p.name %>
-  <% end %>
-</p>
+<tr>
+  <td><h3>Instructors: </h3><td>
+  <td>
+    <% @course.instructors.each do |p| %>
+        <%= p.name %>
+      <% end %>
+    <td>
+</tr>
 
-<p>
-  <b>Students:</b>
-  <% @course.students.each do |p| %> |
-    <%= p.name %>
-  <% end %>
-</p>
+<tr>
+  <td><h3>Students: </h3><td>
+  <td>
+    <% @course.students.each do |p| %> |
+        <%= p.name %>
+      <% end %>
+    <td>
+</tr>
 
 <% end %>
 
-<% if current_user.role == "producer" %>
 
+<tr>
+  <td>
+<% if current_user.role == "producer" %>
+  
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Destroy', @course, method: :delete, data: { confirm: 'Are you sure?' } %> |
 
 <% end %>
 
 <%= link_to 'Back', courses_path %>
+</td>
+</tr>
+</table>

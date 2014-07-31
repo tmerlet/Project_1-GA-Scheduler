@@ -30,7 +30,7 @@
 
 <div class="new_course">
   <% if current_user.role == "producer" %>
-    <%= link_to 'New Course', new_course_path %>
+    <%= link_to 'New Course', new_course_path, class: "button" %>
   <% end %>
 </div>
 
