@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<% if current_user.role == "student" %>
+
+  <h2>Sign up!: Call Oliver on 07590 666 9801</h2>
+
+<% end %>
 
 <p>
   <b>Program:</b>
