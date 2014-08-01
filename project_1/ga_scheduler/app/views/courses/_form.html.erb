@@ -61,7 +61,7 @@
   <div class="field">
   <h3>Select Instructor</h3> 
     <% User.where(role: "instructor").each do |user| %>  
-      <%= check_box_tag "course[instructor_ids][]", user.id %>
+      <%= check_box_tag "course[instructor_ids][]", user.id, @course.instructors.include?(user), id: "course_instructor_ids_#{user.id}" %>
 
       <%= label :user_ids, user.name%>
     <% end %>
