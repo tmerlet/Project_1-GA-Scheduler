@@ -20,7 +20,7 @@ class CalendarController < ApplicationController
     # binding.pry
 
     @courses.each do |x|
-      Event.create(name: x.name, start_at: x.start_course, end_at: x.end_course, course_id: x.id)
+      Event.create(name: x.program.name, start_at: x.start_course, end_at: x.end_course, course_id: x.id)
     end
 
     @month = (params[:month] || (Time.zone || Time).now.month).to_i
